@@ -98,9 +98,12 @@ html,body{
     color: grey;
 }
 
+/* ---------Postcards------------ */
+
 .postcard{
     /* display: flex; */
-    /* height: 350px; */
+    /* flex-wrap: wrap; */
+    height: 400px !important;
     background-color: #18151f;
     color: white;
     border-radius: 20px;
@@ -124,11 +127,14 @@ html,body{
     .two-carousel-items{
         display: flex;
     }
+    
 }
 
 .postcard__img{
-    width: 300px;
-    
+    width: auto !important;
+    height: 300px !important;
+    display: block !important;
+    margin: auto !important;
 }
 
 .postcard__text{
@@ -143,6 +149,17 @@ html,body{
     z-index: 0;
 }
 
+.carousel-control-prev{
+    margin-left: -6% !important;
+}
+
+.carousel-control-next{
+    margin-right: -6% !important;
+}
+
+.postcard__img_link:hover{
+    transform:scale(1.1) !important;
+}
 /* ---------Carousel-fade-out------------ */
 .popup-carousel{
     width:100%;

@@ -15,6 +15,36 @@
 </head>
 
 <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "466792323479644");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <section class="nav-background-img">
         <section class="navigation">
@@ -77,20 +107,20 @@
     </section>
     <section class="postcard-carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <!-- <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
-            </div>
+            </div> -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <section class="two-carousel-items">
                         <article class="postcard dark blue">
                             <a class="postcard__img_link" href="#">
-                                <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+                                <img class="postcard__img" src="/portrait/portrait-8.jpg" alt="Image Title" />
                             </a>
                             <div class="postcard__text">
                                 <h1 class="postcard__title blue">Portrait</h1>
@@ -105,49 +135,12 @@
                                     vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum
                                     dolores
                                     nobis
-                                    enim quidem excepturi, illum quos!</div>
-                                <ul class="postcard__tagbox">
-                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-                                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                                    <li class="tag__item play blue">
-                                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-                                    </li>
-                                </ul>
+                                    enim quidem excepturi, illum quos!
+                                </div>
+                                <div class="viewmore btn btn-primary">View More</div>
                             </div>
                         </article>
 
-                        <article class="postcard dark blue">
-                            <a class="postcard__img_link" href="#">
-                                <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
-                            </a>
-                            <div class="postcard__text">
-                                <h1 class="postcard__title blue">Maternal</h1>
-                                <div class="postcard__bar"></div>
-                                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing
-                                    elit.
-                                    Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi
-                                    quia,
-                                    doloribus
-                                    eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae
-                                    repellat
-                                    vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum
-                                    dolores
-                                    nobis
-                                    enim quidem excepturi, illum quos!</div>
-                                <ul class="postcard__tagbox">
-                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
-                                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
-                                    <li class="tag__item play blue">
-                                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                    </section>
-                </div>
-                <div class="carousel-item">
-                    <section class="two-carousel-items">
                         <article class="postcard dark blue">
                             <a class="postcard__img_link" href="#">
                                 <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
@@ -176,12 +169,44 @@
                             </div>
                         </article>
 
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class="two-carousel-items">
                         <article class="postcard dark blue">
                             <a class="postcard__img_link" href="#">
                                 <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
                             </a>
                             <div class="postcard__text">
-                                <h1 class="postcard__title blue">Portrait</h1>
+                                <h1 class="postcard__title blue">Wedding</h1>
+                                <div class="postcard__bar"></div>
+                                <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
+                                    Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi
+                                    quia,
+                                    doloribus
+                                    eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae
+                                    repellat
+                                    vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum
+                                    dolores
+                                    nobis
+                                    enim quidem excepturi, illum quos!</div>
+                                <ul class="postcard__tagbox">
+                                    <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                                    <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                                    <li class="tag__item play blue">
+                                        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="postcard dark blue">
+                            <a class="postcard__img_link" href="#">
+                                <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
+                            </a>
+                            <div class="postcard__text">
+                                <h1 class="postcard__title blue">Landscape</h1>
                                 <div class="postcard__bar"></div>
                                 <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.
@@ -213,7 +238,7 @@
                                 <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
                             </a>
                             <div class="postcard__text">
-                                <h1 class="postcard__title blue">Portrait</h1>
+                                <h1 class="postcard__title blue">Baby</h1>
                                 <div class="postcard__bar"></div>
                                 <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.
@@ -241,7 +266,7 @@
                                 <img class="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
                             </a>
                             <div class="postcard__text">
-                                <h1 class="postcard__title blue">Portrait</h1>
+                                <h1 class="postcard__title blue">Maternity</h1>
                                 <div class="postcard__bar"></div>
                                 <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.
@@ -298,7 +323,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="get-in-touch">
         <!--Section: Contact v.2-->
