@@ -1,3 +1,7 @@
+html,body{
+    height: 100%;
+}
+
 /* Navigation bar  */
 .navbar a{
     color: white !important;
@@ -138,6 +142,60 @@
 .postcard-carousel{
     z-index: 0;
 }
+
+/* ---------Carousel-fade-out------------ */
+.popup-carousel{
+    width:100%;
+    height:100%;
+    /* background-color: red; */
+    display: none;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    /* padding: 100px; */
+}
+
+.carousel-1{
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+    position: relative;
+    padding: 10px;
+}
+
+.carousel-popup-close button{
+    padding: 5px;
+    background-color: white;
+    border-radius: 30%;
+}
+
+.carousel-popup-close button:hover{
+    background-color: grey;
+    opacity: .9;
+}
+
+/* ----------Portrait-Collection */
+
+.portrait-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portrait-collection img{
+    width: auto;
+    height: 380px;
+    /* padding: 20px; */
+    transition: transform 0.200s;
+
+}
+
+.portrait-collection img:hover{
+    /* width: auto;
+    height: 600px; */
+    transform: scale(1.5); 
+}
+
 
 /*----------- Get in touch -----------*/
 .get-in-touch{

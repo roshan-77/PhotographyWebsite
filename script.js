@@ -39,3 +39,16 @@ $('.close').click(function(){
   $('body').css('height', "")
   $('body').css('overflow-y','')
 })
+
+$('.postcard').click(function(){
+  $('.popup-carousel').css("display","flex")
+  $('body').css("overflow-y",'hidden' )
+  $('.carousel-1').css("overflow-y","scroll")
+  // $('.popup-carousel').css("transition", ' transform 2s')
+})
+
+$('.carousel-popup-close').click(function(){
+  $('.popup-carousel').css('display',"none")
+  $('body').css("overflow-y",'' )
+
+})
