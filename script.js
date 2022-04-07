@@ -40,9 +40,8 @@ $('.close').click(function(){
   $('body').css('overflow-y','')
 })
 
-
-  $('.viewmore').click(function(){
-    $('.popup-carousel').css("display","flex")
+  $('.carousel-card-button').click(function(){
+    $('.popup-carousel-1').css("display","flex")
     $('body').css("overflow-y",'hidden' )
     $('.carousel-images').css("overflow-y","scroll")
     $('.carousel-control-prev').css("display","none")
@@ -50,7 +49,6 @@ $('.close').click(function(){
   
     // $('.popup-carousel').css("transition", ' transform 2s')
   })
-
 
 
 
