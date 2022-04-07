@@ -40,16 +40,19 @@ $('.close').click(function(){
   $('body').css('overflow-y','')
 })
 
-$('.viewmore').click(function(){
-  $('.popup-carousel').css("display","flex")
-  $('body').css("overflow-y",'hidden' )
-  $('.carousel-1').css("overflow-y","scroll")
-  $('.carousel-control-prev').css("display","none")
-  $('.carousel-control-next').css("display","none")
+
+  $('.viewmore').click(function(){
+    $('.popup-carousel').css("display","flex")
+    $('body').css("overflow-y",'hidden' )
+    $('.carousel-images').css("overflow-y","scroll")
+    $('.carousel-control-prev').css("display","none")
+    $('.carousel-control-next').css("display","none")
+  
+    // $('.popup-carousel').css("transition", ' transform 2s')
+  })
 
 
-  // $('.popup-carousel').css("transition", ' transform 2s')
-})
+
 
 $('.carousel-popup-close').click(function(){
   $('.popup-carousel').css('display',"none")
