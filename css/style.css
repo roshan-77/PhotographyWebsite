@@ -221,6 +221,7 @@ html,body{
        
    }
 
+
    .carousel-card-wrapper>.img-title>div{
        border-radius: 10px;
        font-size: 15px;
@@ -249,17 +250,7 @@ html,body{
    }
 
 /* ---------Carousel-fade-out------------ */
-.popup-carousel-1{
-    width:100%;
-    height:100%;
-    /* background-color: red; */
-    display: none;
-    position: fixed;
-    /* z-index: 1; */
-    top: 0;
-    /* padding: 100px; */
-}
-.popup-carousel-2{
+.popup-carousel{
     width:100%;
     height:100%;
     /* background-color: red; */
@@ -275,6 +266,46 @@ html,body{
     background-color: rosybrown;
     position: relative;
     padding: 10px;
+}
+
+/* .parallax-1{
+    position: relativel;
+    background-image: url('/portrait/portrait-1.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100% auto;
+    
+}
+.parallax-2{
+    background-image: url('/portrait/portrait-4.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100% auto;
+}
+.parallax-3{
+    background-image: url('/portrait/portrait-5.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100% auto;
+} */
+.carousel-images>h1{
+    text-align: center;
+    /* font-size: 70px; */
+    /* position: relative; */
+    /* background-attachment: fixed; */
+}
+
+.carousel-images>.portrait-collection{
+    position: relative;
 }
 
 .carousel-popup-close button{

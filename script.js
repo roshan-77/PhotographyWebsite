@@ -41,7 +41,7 @@ $('.close').click(function(){
 })
 
   $('.carousel-card-button').click(function(){
-    $('.popup-carousel-1').css("display","flex")
+    $('.popup-carousel').css("display","flex")
     $('body').css("overflow-y",'hidden' )
     $('.carousel-images').css("overflow-y","scroll")
     $('.carousel-control-prev').css("display","none")
@@ -61,4 +61,17 @@ $('.carousel-popup-close').click(function(){
 })
 
 
+
+function sendMail(params){
+  var tempParams= {
+    from_name:document.getElementById('fromName').value,
+    from_email: document.getElementById('fromEmail').value,
+    subject: document.getElementById('subject').value,
+    message:document.getElementById('msg').value,
+  }
+  emailjs.send('service_s5tci3d', 'template_6cvxcsf', tempParams)
+  .then(function(res){
+    console.log("success", res.status)
+  })
+}
 
