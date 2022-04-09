@@ -72,6 +72,12 @@ function sendMail(params){
   emailjs.send('service_s5tci3d', 'template_6cvxcsf', tempParams)
   .then(function(res){
     console.log("success", res.status)
+  }).then(()=>{
+    document.getElementById('fromName').value = ''
+    document.getElementById('fromEmail').value = ''
+    document.getElementById('subject').value =''
+    document.getElementById('msg').value =''
   })
+  
 }
 
