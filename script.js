@@ -21,6 +21,10 @@ $(function() {
 
 // })
 
+$(document).ready(function() {
+  $("#MyModal").modal();
+});
+
 $('.view-offers').click(function(){
 $('.bg-offers-popup').css('display',"flex")
 $('body').css('height', "100%")
@@ -40,15 +44,15 @@ $('.close').click(function(){
   $('body').css('overflow-y','')
 })
 
-  $('.carousel-card-button').click(function(){
-    $('.popup-carousel').css("display","flex")
-    $('body').css("overflow-y",'hidden' )
-    $('.carousel-images').css("overflow-y","scroll")
-    $('.carousel-control-prev').css("display","none")
-    $('.carousel-control-next').css("display","none")
+  // $('.carousel-card-button').click(function(){
+  //   $('.popup-carousel').css("display","flex")
+  //   $('body').css("overflow-y",'hidden' )
+  //   $('.carousel-images').css("overflow-y","scroll")
+  // //   // $('.carousel-control-prev').css("display","none")
+  // //   // $('.carousel-control-next').css("display","none")
   
-    // $('.popup-carousel').css("transition", ' transform 2s')
-  })
+  // //   // $('.popup-carousel').css("transition", ' transform 2s')
+  // })
 
 
 
@@ -81,3 +85,16 @@ function sendMail(params){
   
 }
 
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.querySelector('.carousel-cards').scrollLeft += 200;
+  $('.carousel-cards').css("scroll-behaviour", "smooth")
+
+};
+buttonLeft.onclick = function () {
+  document.querySelector('.carousel-cards').scrollLeft -= 200;
+  $('.carousel-cards').css("scroll-behaviour", "smooth")
+
+};

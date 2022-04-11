@@ -314,7 +314,11 @@
                 </div>
                 <div class="img-title">
                     <h2><u>Portrait</u></h2>
-                    <div class="carousel-card-button btn btn-primary">Click Me!</div>
+
+                    <button type="button" class="carousel-card-button btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">
+                        Click Me
+                    </button>
                 </div>
             </div>
             <div class="carousel-card-wrapper">
@@ -323,7 +327,10 @@
                 </div>
                 <div class="img-title">
                     <h2><u>Birthday</u></h2>
-                    <div class="carousel-card-button btn btn-primary">Click Me!</div>
+                    <button type="button" class=" carousel-card-button btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                        Click Me
+                    </button>
                 </div>
             </div>
             <div class="carousel-card-wrapper">
@@ -370,13 +377,13 @@
         </div> -->
     </section>
 
-    <section id="popup-carousel-0" class="popup-carousel">
+    <button id="slideLeft" type="button">Slide left</button>
+    <button id="slideRight" type="button">Slide right</button>
+
+    <!-- <section id="popup-carousel-0" class="modal popup-carousel" id="modal1">
         <div class="carousel-images carousel-1">
             <div class="carousel-popup-close"><button>Close</button></div>
             <h1>Portrait</h1>
-
-
-
 
 
             <div class="portrait-collection">
@@ -392,19 +399,19 @@
                 <img src="portrait/portrait-10.jpg" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="popup-carousel-1" class="popup-carousel">
+    <!-- <section id="popup-carousel-1" class="modal popup-carousel" id="modal2">
         <div class="carousel-images carousel-2">
             <div class="carousel-popup-close"><button>Close</button></div>
             <h1>Portrait</h1>
 
-            <!-- <div class="parallax-1"></div>
+            <div class="parallax-1"></div>
             <div class="parallax-2"></div>
             <div class="parallax-3"></div>
             <div class="parallax-4"></div>
             <div class="parallax-5"></div>
-            <div class="parallax-6"></div> -->
+            <div class="parallax-6"></div>
 
             <div class="portrait-collection">
                 <img src="portrait/portrait-2.jpg" alt="">
@@ -416,7 +423,77 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content popup-carousel">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body carousel-images">
+                    <div class="portrait-collection">
+                        <img src="portrait/portrait-1.jpg" alt="">
+                        <img src="portrait/portrait-2.jpg" alt="">
+                        <img src="portrait/portrait-3.jpg" alt="">
+                        <img src="portrait/portrait-4.jpg" alt="">
+                        <img src="portrait/portrait-5.jpg" alt="">
+                        <img src="portrait/portrait-6.jpg" alt="">
+                        <img src="portrait/portrait-7.jpg" alt="">
+                        <img src="portrait/portrait-8.jpg" alt="">
+                        <img src="portrait/portrait-9.jpg" alt="">
+                        <img src="portrait/portrait-10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade popup-carousel" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content popup-carousel">
+                <!-- <div class="modal-header"> -->
+
+                <!-- </div> -->
+                <div class="modal-body carousel-images">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="portrait-collection">
+
+                        <img src="portrait/portrait-2.jpg" alt="">
+                        <img src="portrait/portrait-3.jpg" alt="">
+                        <img src="portrait/portrait-5.jpg" alt="">
+                        <img src="portrait/portrait-6.jpg" alt="">
+                        <img src="portrait/portrait-7.jpg" alt="">
+                        <img src="portrait/portrait-8.jpg" alt="">
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <section class="get-in-touch">
         <!--Section: Contact v.2-->
         <section class="mb-4">
