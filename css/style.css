@@ -3,9 +3,25 @@ html,body{
 }
 
 /* Navigation bar  */
-.navbar a{
+.navbar-nav >li> a, .navbar-brand{
     color: white !important;
 }
+
+.navbar-brand{
+    text-shadow: 10px 10px 5px brown;
+}
+
+.navbar-brand{
+    font-size: xx-large;
+    
+}
+
+.navbar-collapse{
+    /* display: flex !important; */
+    justify-content: end !important;
+    font-size: larger;
+}
+
 /* Background-img */
 
 .nav-background-img{
@@ -147,7 +163,101 @@ html,body{
 } */
 
 .postcard-carousel{
-    z-index: 0;
+    padding: 40px;
+}
+
+.postcard-carousel h1{
+    /* z-index: 0; */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* .postcard-carousel>div{
+    width:200px;
+    height: 100px !important;
+} */
+
+.what-we-offer>div:hover{
+    opacity: 0.8;
+    
+}
+
+@media screen and (min-width: 600px){
+    .what-we-offer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* .card-img-overlay{
+    
+    opacity: 0;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:auto;
+    
+} */
+
+.what-we-offer.card{
+    height: 400px;
+    background-color: white !important;
+}
+
+.card-img-overlay>button{
+    opacity: 0;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.card-img-overlay:hover{
+    opacity: 1;
+}
+
+.card-img-overlay>button:hover{
+    opacity: 1;
+}
+
+/* ----------Our top selects----------- */
+.our-top-selects{
+    background-color: gray;
+    border-color: black;
+    border-radius: 10px;
+    
+}
+
+.top-selects{
+    padding: 5px; 
+    margin: 40px;
+
+}
+
+.our-top-selects h1{
+    text-align: center;
+}
+.our-top-selects .selects img{
+    width:auto;
+    height: 300px;
+}
+
+
+.postcard-carousel>div>img:hover{
+  opacity: 0.7;
 }
 
 .carousel-control-prev{
@@ -223,7 +333,7 @@ html,body{
    }
 
 
-   .carousel-card-wrapper>.img-title>div{
+   .carousel-card-wrapper>.img-title>button{
        border-radius: 10px;
        font-size: 15px;
        margin-top: -40px;
@@ -270,6 +380,11 @@ html,body{
     margin-left: 0 !important;
     left: 0 !important
 } */
+
+.modal-header h5{
+    /* margin: 0 auto !important; */
+    font-size: 30px;
+}
 
 .carousel-images{
     width: 100%;
