@@ -8,6 +8,7 @@
     <title>Photography</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/photography.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -59,8 +60,8 @@
                                 Our Works
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Photography</a></li>
-                                <li><a class="dropdown-item" href="#">Videography</a></li>
+                                <li><a class="dropdown-item" href="/photography.html">Photography</a></li>
+                                <li><a class="dropdown-item" href="/videography.html">Videography</a></li>
                                 <li><a class="dropdown-item" href="#">UX/UI Design</a></li>
                             </ul>
                         </li>
@@ -74,30 +75,69 @@
 
             <h1 class="header">Portrait</h1>
             <div class="photo portrait">
-                <button class="view">View</button>
+                <button class=" btn btn-danger view" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                    hidden="true">View</button>
             </div>
             <h1 class="header">Landscape</h1>
             <div class="photo landscape">
-                <button class="view">View</button>
+                <button class=" btn btn-danger view" hidden="true">View</button>
             </div>
             <h1 class="header">Birthdays</h1>
             <div class="photo birthday">
-
+                <button class="btn btn-danger view" hidden="true">View</button>
             </div>
             <h1 class="header">Events</h1>
-            <div class="photo events">Img4
+            <div class="photo events">
+                <button class=" btn btn-danger view" hidden="true">View</button>
             </div>
             <h1 class="header">Maternity</h1>
-            <div class="photo maternity">Img5
+            <div class="photo maternity">
+                <button class=" btn btn-danger view" hidden="true">View</button>
             </div>
             <h1 class="header">Baby</h1>
-            <div class="photo baby">Img6
+            <div class="photo baby">
+                <button class=" btn btn-danger view" hidden="true">View</button>
             </div>
 
         </div>
     </section>
 
+    <div class="modal fade popup-carousel" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content popup-carousel">
+                <!-- <div class="modal-header"> -->
+
+                <!-- </div> -->
+                <div class="modal-body carousel-images">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center " id="exampleModalLabel">
+                            Portraits</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="portrait-collection">
+
+                        <img src="portrait/portrait-2.jpg" alt="">
+                        <img src="portrait/portrait-3.jpg" alt="">
+                        <img src="portrait/portrait-5.jpg" alt="">
+                        <img src="portrait/portrait-6.jpg" alt="">
+                        <img src="portrait/portrait-7.jpg" alt="">
+                        <img src="portrait/portrait-8.jpg" alt="">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="https://use.fontawesome.com/7ee77d16ef.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="/script.js"></script>
 
 </html>
 

@@ -1,5 +1,6 @@
 html,body{
     height: 100%;
+    
 }
 
 /* Navigation bar  */
@@ -183,12 +184,17 @@ html,body{
     
 }
 
+.what-we-offer .card{
+    border-radius: 20px;
+}
+
 @media screen and (min-width: 600px){
     .what-we-offer{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 70%;
         margin: 0 auto;
+        column-gap:20px;
     }
 }
 
@@ -224,7 +230,10 @@ html,body{
     padding: 10px;
     border-radius: 20px;
 }
-
+.card-img-overlay>button>a{
+    text-decoration: none;
+    color: black;
+}
 .card-img-overlay:hover{
     opacity: 1;
 }

@@ -44,6 +44,14 @@ $('.close').click(function(){
   $('body').css('overflow-y','')
 })
 
+$('.photo').hover(function(){
+  $('.view').prop("hidden", false)
+},function(){
+  $('.view').prop("hidden", true)
+
+}
+)
+
   // $('.carousel-card-button').click(function(){
   //   $('.popup-carousel').css("display","flex")
   //   $('body').css("overflow-y",'hidden' )
